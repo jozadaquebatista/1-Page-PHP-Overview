@@ -1,5 +1,6 @@
 <?php
 
+
 	define('NL', '<br>');
 	define('MSG', '?@My Message Here@?');
 
