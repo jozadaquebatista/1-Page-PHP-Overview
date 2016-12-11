@@ -29,12 +29,12 @@
 				echo '<li>' . $lang . '</li>';
 			
 			echo '</ol>';
-				
+			
 			}
 		}
 		
 	}
-
+ 
 	$l_array = array(
 		'c',
 		'c++',
