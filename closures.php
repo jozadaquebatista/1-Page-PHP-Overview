@@ -1,20 +1,20 @@
 <?php
 
-    function verifica_login(string $closure) {
+    function verify(string $u, string $p) {
 
-        function getModelUsuario($closure) {
-            function credencial() { 
+        function getModelUser(string $closure) : array {
+            function credentials() { 
                 return ['joza','123'];
             }
-            function outra() {
+            function other() {
                 return;
             }
             return $closure();
         };
 
-        if( $_POST['usuario'] === getModelUsuario('credencial')[0]
+        if( $_POST['usuario'] === getModelUsuario('credentials')[0]
             and
-            $_POST['senha'] === getModelUsuario('credencial')[1]) {
+            $_POST['senha'] === getModelUsuario('credentials')[1]) {
             //...
         }
 
